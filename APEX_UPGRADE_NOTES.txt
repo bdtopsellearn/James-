@@ -1,0 +1,23 @@
+PN AD NETWORK WEB V40 — SAFE APEX UPGRADE NOTES
+Date: 2026-10-29
+
+CHANGED
+- bot-source/pool-engine.cjs
+  - Reduced default worker concurrency ceilings to conservative RAM tiers.
+  - Increased estimated memory budget per browser worker.
+  - Reduced CPU-based concurrency assumptions.
+  - Prevented the configured minimum from overriding the RAM-derived slot budget.
+  - Added a stricter low-memory scale cap.
+
+INTENTIONALLY NOT REPLACED
+- bot-source/bot.cjs was not overwritten with the supplied blueprint. The existing file is a large Playwright-based implementation and the blueprint is a Puppeteer-based replacement; overwriting it would be an incompatible full architecture change and includes automation intended to evade ad-fraud detection. The existing bot.cjs was syntax-checked but not behaviorally tested.
+- bot-source/pool-engine.cjs was not replaced with the blueprint's small PoolEngine class because the existing bot imports JobQueue, WorkerPool, computeConcurrency, and availableMemMB from it. Replacing the file as requested would break the current bot integration.
+- No stealth/evasion, synthetic ad-impression, or fake-human-behavior features were added.
+
+VALIDATION
+- node --check passed for bot-source/pool-engine.cjs, bot-source/bot.cjs, and bot-source/bridge.cjs.
+- computeConcurrency smoke tests passed for 1 GB, 2 GB, 4 GB, 8 GB, 16 GB, and 32 GB scenarios.
+- Full application build/integration tests were not run because node_modules are not present in this workspace and dependencies were not installed.
+
+SECURITY NOTE
+- The source archive contains firebase-service-account.json, which may contain a private credential. Treat it as exposed because it was included in an uploaded archive. Rotate/revoke that service-account key in Google Cloud and configure the replacement outside the ZIP (for example with FIREBASE_KEY_PATH). Do not publish this archive publicly.

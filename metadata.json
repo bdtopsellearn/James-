@@ -1,0 +1,6 @@
+{
+  "name": "X AD Marketing - SaaS Dashboard",
+  "description": "Enterprise-grade traffic network & smartlink monetization dashboard with X AD Marketing branding, real-time live monitoring, wallet & membership billing, and granular admin controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

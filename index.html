@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0e1a" />
+    <meta name="color-scheme" content="light dark" />
+    <title>X AD MARKETING — Premium Traffic & Monetization Platform</title>
+    <meta name="description" content="X AD MARKETING — premium traffic exchange & monetization platform with a real-time dashboard, live smart-link monitoring, and an organic multi-phase delivery engine." />
+    <meta property="og:title" content="X AD MARKETING — Premium Traffic & Monetization Platform" />
+    <meta property="og:description" content="X AD MARKETING — premium traffic exchange & monetization platform with a real-time dashboard, live smart-link monitoring, and an organic multi-phase delivery engine." />
+    <script>
+      // Apply the saved theme before first paint so there is never a light/dark flash.
+      (function () {
+        try {
+          var t = localStorage.getItem('pn_theme');
+          if (t !== 'light' && t !== 'dark') t = 'dark';
+          var r = document.documentElement;
+          if (t === 'dark') r.classList.add('dark'); else r.classList.remove('dark');
+          r.dataset.theme = t;
+          r.style.colorScheme = t;
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png?v=14" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=14" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=14" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="X AD MARKETING" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

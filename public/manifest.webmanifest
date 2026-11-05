@@ -1,0 +1,32 @@
+{
+  "name": "X AD MARKETING",
+  "short_name": "X AD",
+  "description": "Enterprise Traffic & Monetization Platform with real-time live monitoring and the H4CK Organic 5-phase engine.",
+  "start_url": "/#/overview",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070b14",
+  "theme_color": "#0a0e1a",
+  "categories": ["business", "productivity", "marketing"],
+  "icons": [
+    {
+      "src": "/favicon-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

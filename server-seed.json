@@ -1,0 +1,395 @@
+{
+  "users": [],
+  "admins": [
+    {
+      "id": "usr_super_admin",
+      "email": "alif.yasin@pnnetwork.io",
+      "name": "Alif Yasin",
+      "role": "super_admin",
+      "status": "active",
+      "permissions": [
+        "users.view",
+        "users.edit",
+        "users.delete",
+        "users.ban",
+        "admins.view",
+        "admins.create",
+        "admins.edit",
+        "admins.delete",
+        "database.view",
+        "database.edit",
+        "database.delete",
+        "database.recovery",
+        "settings.view",
+        "settings.edit",
+        "analytics.view",
+        "logs.view",
+        "broadcasts.manage",
+        "content.manage"
+      ],
+      "createdAt": "2026-01-01T00:00:00Z",
+      "lastLoginAt": "2026-10-01T15:36:59.977Z",
+      "isRootSuperAdmin": true
+    },
+    {
+      "id": "usr_admin_ops",
+      "email": "ops.officer@pnnetwork.io",
+      "name": "Sarah Ops Manager",
+      "role": "admin",
+      "status": "active",
+      "permissions": [
+        "users.view",
+        "users.edit",
+        "users.ban",
+        "database.view",
+        "settings.view",
+        "analytics.view",
+        "logs.view",
+        "content.manage"
+      ],
+      "createdAt": "2026-08-15T12:00:00Z",
+      "lastLoginAt": "2026-10-01T02:15:00Z"
+    }
+  ],
+  "wallet": {
+    "userId": "",
+    "balance": 0,
+    "currency": "BDT",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  "credits": {
+    "userId": "",
+    "balance": 0,
+    "lifetimeUsed": 0,
+    "hourlyUsed": 0,
+    "dailyUsed": 0,
+    "hourlyLimit": 0,
+    "dailyLimit": 0,
+    "concurrentBrowsers": 0,
+    "maxConcurrentBrowsers": 1
+  },
+  "normalLinks": [],
+  "smartlinks": [],
+  "proxies": [
+    {
+      "id": "prx_1",
+      "name": "US-East Residential Static SOCKS5 #1",
+      "server": "socks5://198.54.112.45:1080",
+      "type": "socks5",
+      "country": "US",
+      "residential": true,
+      "quotaMb": 50000,
+      "mbUsed": 1420.5,
+      "enabled": true,
+      "latencyMs": 142,
+      "stats": {
+        "total": 4890,
+        "ok": 4820,
+        "failed": 70,
+        "consecutiveFails": 0,
+        "lastHealthCheck": "2026-10-01T15:36:59.977Z"
+      },
+      "addedAt": "2026-08-20T00:00:00Z"
+    },
+    {
+      "id": "prx_2",
+      "name": "US-West Mobile 4G LTE Resi Pool #2",
+      "server": "socks5://167.99.145.22:22225",
+      "type": "socks5",
+      "country": "US",
+      "residential": true,
+      "quotaMb": 100000,
+      "mbUsed": 8940.2,
+      "enabled": true,
+      "latencyMs": 168,
+      "stats": {
+        "total": 6100,
+        "ok": 6020,
+        "failed": 80,
+        "consecutiveFails": 0,
+        "lastHealthCheck": "2026-10-01T15:36:59.977Z"
+      },
+      "addedAt": "2026-08-22T00:00:00Z"
+    },
+    {
+      "id": "prx_3",
+      "name": "US-Central Clean Comcast Residential #3",
+      "server": "socks5://68.183.190.101:10080",
+      "type": "socks5",
+      "country": "US",
+      "residential": true,
+      "quotaMb": 25000,
+      "mbUsed": 420,
+      "enabled": true,
+      "latencyMs": 155,
+      "stats": {
+        "total": 2450,
+        "ok": 2410,
+        "failed": 40,
+        "consecutiveFails": 0,
+        "lastHealthCheck": "2026-10-01T15:36:59.977Z"
+      },
+      "addedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "impressions": [],
+  "target": {
+    "userId": "",
+    "targetAmount": 0,
+    "currentProgress": 0,
+    "isActive": false,
+    "mode": "organic",
+    "hourlySpeed": 0
+  },
+  "transactions": [],
+  "balanceRequests": [],
+  "paymentMethods": [
+    {
+      "id": "bkash",
+      "key": "bkash",
+      "name": "bKash (Send Money)",
+      "number": "01859666014",
+      "type": "mobile_banking",
+      "instructions": "Send Money to personal number, enter your TXN ID below.",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "nagad",
+      "key": "nagad",
+      "name": "Nagad (Send Money)",
+      "number": "01859666014",
+      "type": "mobile_banking",
+      "instructions": "Send Money to personal number, enter your TXN ID below.",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "binance",
+      "key": "binance",
+      "name": "Binance Pay ID",
+      "number": "891048291",
+      "type": "crypto_id",
+      "instructions": "Send USDT via Binance Pay, enter order ID/TXN ID.",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "usdt_trc20",
+      "key": "usdt_trc20",
+      "name": "USDT (TRC20)",
+      "number": "TWtY8vj67MhTz2R8N19sKQ8821zLmqP1aB",
+      "type": "crypto_wallet",
+      "instructions": "Send exact USDT TRC20, enter transaction blockchain TXID.",
+      "enabled": true,
+      "order": 4
+    }
+  ],
+  "shopPackages": [
+    {
+      "id": "p1",
+      "credits": 100,
+      "bonus": 0,
+      "price": 10,
+      "badge": "STARTER",
+      "enabled": true
+    },
+    {
+      "id": "p2",
+      "credits": 500,
+      "bonus": 50,
+      "price": 45,
+      "badge": "POPULAR",
+      "enabled": true
+    },
+    {
+      "id": "p3",
+      "credits": 1000,
+      "bonus": 100,
+      "price": 80,
+      "badge": "BEST VALUE",
+      "enabled": true
+    },
+    {
+      "id": "p4",
+      "credits": 5000,
+      "bonus": 500,
+      "price": 350,
+      "badge": "GROWTH",
+      "enabled": true
+    },
+    {
+      "id": "p5",
+      "credits": 10000,
+      "bonus": 1000,
+      "price": 650,
+      "badge": "SCALE",
+      "enabled": true
+    },
+    {
+      "id": "p6",
+      "credits": 50000,
+      "bonus": 5000,
+      "price": 2800,
+      "badge": "ENTERPRISE",
+      "enabled": true
+    }
+  ],
+  "membershipPlans": [
+    {
+      "id": "free",
+      "key": "free",
+      "label": "Free",
+      "days": 0,
+      "price": 0,
+      "linkLimit": 0,
+      "visitsPerLink": 0,
+      "dailyBurstLimit": 0,
+      "bonusCredits": 0,
+      "features": [
+        "No paid traffic allocation",
+        "Add funds to activate paid plans"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "monthly",
+      "key": "monthly",
+      "label": "1 Month Standard",
+      "days": 30,
+      "price": 199,
+      "linkLimit": 5,
+      "visitsPerLink": 5,
+      "dailyBurstLimit": 100,
+      "bonusCredits": 200,
+      "features": [
+        "5 Active Normal Links",
+        "5 Visits per Burst Interval",
+        "100 Daily Burst Runs",
+        "+200 Free Credits Included",
+        "Standard Residential Proxies",
+        "Adsterra Safe CPM Preservation"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "twomonth",
+      "key": "twomonth",
+      "label": "2 Months Pro Growth",
+      "days": 60,
+      "price": 349,
+      "linkLimit": 12,
+      "visitsPerLink": 8,
+      "dailyBurstLimit": 300,
+      "bonusCredits": 500,
+      "features": [
+        "12 Active Normal Links",
+        "8 Visits per Burst Interval",
+        "300 Daily Burst Runs",
+        "+500 Free Credits Included",
+        "High CPM Safari Emulation (90%)",
+        "Automated Multi-Referrer Search Preload"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "threemonth",
+      "key": "threemonth",
+      "label": "3 Months Elite Unlimited",
+      "days": 90,
+      "price": 499,
+      "linkLimit": 20,
+      "visitsPerLink": 12,
+      "dailyBurstLimit": 600,
+      "bonusCredits": 1000,
+      "features": [
+        "20 Active Normal Links",
+        "12 Visits per Burst Interval",
+        "600 Daily Burst Runs",
+        "+1,000 Free Credits Included",
+        "Dedicated Residential SOCKS5 Nodes",
+        "Priority Hourly Queue (90 visits/hr)"
+      ],
+      "enabled": true
+    }
+  ],
+  "promoCodes": [
+    {
+      "id": "promo_1",
+      "code": "WELCOME100",
+      "discountPercent": 0,
+      "bonusCredits": 100,
+      "maxUses": 1000,
+      "usedCount": 142,
+      "expiresAt": "2026-12-31T23:59:59Z",
+      "enabled": true
+    },
+    {
+      "id": "promo_2",
+      "code": "PNSPECIAL",
+      "discountPercent": 20,
+      "bonusCredits": 50,
+      "maxUses": 500,
+      "usedCount": 88,
+      "expiresAt": "2026-12-31T23:59:59Z",
+      "enabled": true
+    },
+    {
+      "id": "promo_3",
+      "code": "BOOST50",
+      "discountPercent": 10,
+      "bonusCredits": 200,
+      "maxUses": 200,
+      "usedCount": 19,
+      "expiresAt": "2026-11-30T23:59:59Z",
+      "enabled": true
+    }
+  ],
+  "supportTickets": [],
+  "sessions": [],
+  "engineSettings": {
+    "mode": "h4ck_organic",
+    "typingCpmMin": 120,
+    "typingCpmMax": 280,
+    "readingPauseChance": 0.3,
+    "bezierMouseMovement": true,
+    "zoomEvents": true,
+    "keyboardNav": true,
+    "videoPauseEvents": false,
+    "competitorVisitChance": 0.08,
+    "dataSaver": {
+      "blockImages": false,
+      "blockMedia": true,
+      "blockFonts": true,
+      "blockAnalytics": false,
+      "blockOtherAds": false,
+      "adsterraWhitelisted": true,
+      "blockWebSockets": true
+    },
+    "usOnlyStrict": true,
+    "highCpmMode": true,
+    "safariRatio": 0.9,
+    "dwellMinSeconds": 30,
+    "dwellMaxSeconds": 90,
+    "tickIntervalSeconds": 30,
+    "smartLinkEngineActive": true,
+    "normalEngineActive": true,
+    "whitelistDomains": [
+      "recallscarce.com",
+      "adsterra.com",
+      "highperformanceformat.com",
+      "profitableratecpm.com",
+      "pemsrv.com"
+    ]
+  },
+  "maintenance": {
+    "enabled": false,
+    "message": "\ud83d\udee0\ufe0f Scheduled maintenance active. Core services are upgrading.",
+    "whitelist": [
+      "usr_super_admin",
+      "alif.yasin@pnnetwork.io"
+    ]
+  },
+  "auditLogs": [],
+  "recoveryItems": []
+}

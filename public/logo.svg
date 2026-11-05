@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pnRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="55%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="pnFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="50%" stop-color="#5eead4" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <filter id="pnGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="8" y="8" width="184" height="184" rx="46" fill="#050a12" stroke="url(#pnRing)" stroke-width="5" filter="url(#pnGlow)" />
+  <rect x="18" y="18" width="164" height="164" rx="38" fill="none" stroke="#2dd4bf" stroke-opacity="0.35" stroke-width="1.5" />
+
+  <g filter="url(#pnGlow)">
+    <path d="M52 138 L52 62 L82 62 C101 62 113 73 113 90 C113 107 101 118 82 118 L70 118 L70 138 Z M70 78 L70 102 L81 102 C91 102 96 97 96 90 C96 83 91 78 81 78 Z"
+      fill="url(#pnFill)" stroke="#04121a" stroke-width="2.5" stroke-linejoin="round" />
+    <path d="M104 138 L104 62 L122 62 L146 110 L146 62 L162 62 L162 138 L144 138 L120 90 L120 138 Z"
+      fill="url(#pnFill)" stroke="#04121a" stroke-width="2.5" stroke-linejoin="round" />
+  </g>
+</svg>

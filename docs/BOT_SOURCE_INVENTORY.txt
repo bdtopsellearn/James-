@@ -1,0 +1,3 @@
+Uploaded bot source: bot-source/bot.js
+Uploaded bridge source: bot-source/bridge.js
+The two files are copied byte-for-byte from the uploaded files and are intentionally not modified.
